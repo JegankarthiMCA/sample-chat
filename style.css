@@ -1,0 +1,79 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for chat */
+.chat-container {
+    background-color: white;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+/* Chat box area */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Message input area */
+#message-input {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Send button */
+#send-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+/* Style for each message */
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #e1e1e1;
+}
+
+.message.user {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #f1f1f1;
+    color: #333;
+}
